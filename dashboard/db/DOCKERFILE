@@ -1,0 +1,4 @@
+FROM postgres
+
+# run the create_db.sql on init
+ADD create_db.sql /docker-entrypoint-initdb.d
